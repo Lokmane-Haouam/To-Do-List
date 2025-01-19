@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Css/main.css" />
+    <title>To Do List</title>
+  </head>
+  <body>
+    <div id="sit" class="sit">
+      <button onclick="toggel()" class="toggel">
+        <i id="tIcon" class="fa-solid fa-angles-left"></i>
+      </button>
+    </div>
+    <div id="form" class="form">
+      <h1>To Do List</h1>
+      <h3>what you have today :</h3>
+      <div class="cont" id="cont">
+        <div id="or">
+          <div id="text" class="text">
+            <input
+              id="input"
+              type="text"
+              placeholder="What Is Your Idea..."
+              onblur="save(this)"
+              autocomplete="off"
+            />
+          </div>
+          <div class="btns">
+            <button onclick="deletefn(this)">
+              <i class="fa-regular fa-trash-can"></i>
+            </button>
+            <button onclick="check(this)">
+              <i id="checkbox" class="fa-regular fa-circle-check"></i>
+            </button>
+          </div>
+          <p id="top" class="top">
+            at :
+            <input
+              onblur="saveDate(this)"
+              id="atTime"
+              type="datetime-local"
+              name=""
+              id=""
+            />
+          </p>
+          <span class="bot">added on :</span>
+        </div>
+      </div>
+    </div>
+    <div id="addi" class="addition">
+      <button id="add" onclick="add()">
+        <i id="addIcon" class="fa-solid fa-plus"></i>
+      </button>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/efbbd54075.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
