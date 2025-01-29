@@ -157,17 +157,12 @@ body {
   text-transform: capitalize;
 }
 #atTime {
-  background-color: transparent;
+    background-color: transparent;
   border: none;
   outline: none;
-  color: #adadad;
   font-size: 14px;
-  -webkit-appearance: none;
-  appearance: none;
-  background: none;
   width: 19px;
+  filter: opacity(0);
+  position: absolute;
 }
-#atTime::-webkit-calendar-picker-indicator {
-  cursor: pointer;
-  display: block;
-}
+
